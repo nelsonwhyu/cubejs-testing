@@ -11,7 +11,8 @@ cube(`Suppliers`, {
   },
   
   measures: {
-    count: {
+    suppliersCount: {
+      sql: `id`,
       type: `count`,
       drillMembers: [id, createdAt]
     }

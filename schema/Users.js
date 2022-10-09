@@ -11,14 +11,15 @@ cube(`Users`, {
   },
   
   measures: {
-    count: {
+    usersCount: {
+      sql: `id`,
       type: `count`,
       drillMembers: [id, city, firstName, lastName, createdAt]
     },
     
-    age: {
+    averageAge: {
       sql: `age`,
-      type: `sum`
+      type: `avg`
     }
   },
   

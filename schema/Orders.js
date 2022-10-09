@@ -19,12 +19,13 @@ cube(`Orders`, {
   },
   
   measures: {
-    count: {
+    ordersCount: {
+      sql: `id`,
       type: `count`,
       drillMembers: [id, createdAt]
     },
     
-    number: {
+    totalOrders: {
       sql: `number`,
       type: `sum`
     }

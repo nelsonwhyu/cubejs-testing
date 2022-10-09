@@ -3,8 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "cubejs-server"
+    "dev": "cubejs-server",
+    "start": "docker compose up"
   },
   "template": "docker",
-  "templateVersion": "0.28.19"
+  "templateVersion": "0.30.75",
+  "devDependencies": {
+    "@cubejs-backend/postgres-driver": "^0.31.3",
+    "@cubejs-backend/server": "^0.31.3"
+  }
 }

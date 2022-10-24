@@ -18,7 +18,7 @@ cube(`Users`, {
     },
     
     averageAge: {
-      sql: `AVG(age)`,
+      sql: `AVG(age) + 10`,
       type: `number`,
       drillMembers: [id, city, gender]
     }

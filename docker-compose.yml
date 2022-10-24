@@ -5,6 +5,7 @@ services:
     image: cubejs/cube:latest
     ports:
       - 4000:4000
+      - 5432:5432
     env_file: .env
     volumes:
       - .:/cube/conf

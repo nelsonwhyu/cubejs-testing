@@ -18,8 +18,8 @@ cube(`Users`, {
     },
     
     averageAge: {
-      sql: `age`,
-      type: `avg`
+      sql: `AVG(age)`,
+      type: `number`
     }
   },
   
